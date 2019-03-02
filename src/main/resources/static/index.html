@@ -7,165 +7,102 @@
 </head>
 <body>
 <div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">物业协调</h3>
-    </div>
     <div class="panel-body">
         <form class="form-horizontal m-workOrder-coordination-form-form">
+
+            <!-- 发件人信息 -->
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">基站编码:</label>
-                <div class="col-sm-4">
-                    <div class="input-group">
-                        <input type="text" class="form-control m-workOrder-coordination-form-stationCode" readonly id="stationCode" >
-                        <div class="input-group-addon">
-                            <a class="pointer m-workOrder-coordination-form-searchStation">
-                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <label class="col-sm-2 control-label">合同编码:</label>
-                <div class="col-sm-4">
-                    <div class="input-group">
-                        <input type="text" class="form-control m-workOrder-coordination-form-contractCode" readonly id="contractCode" >
-                        <div class="input-group-addon">
-                            <a class="pointer m-workOrder-coordination-form-searchContract">
-                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <label class="col-sm-2 control-label">发件人信息</label>
             </div>
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">基站名称:</label>
+                <label class="col-sm-2 control-label">发件人账号</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control m-workOrder-coordination-form-stationName" readonly id="stationName" >
                 </div>
-                <label class="col-sm-2 control-label">基站状态:</label>
+                <label class="col-sm-2 control-label">联系人名称</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control m-workOrder-coordination-form-stationStatus" readonly id="stationStat" >
                 </div>
             </div>
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">是否转名:</label>
+                <label class="col-sm-2 control-label">发件人参考信息</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control m-workOrder-coordination-form-chgSignFlag" readonly id="chgSignFlag" >
                 </div>
-                <label class="col-sm-2 control-label">归属运营商:</label>
+                <label class="col-sm-2 control-label">公司名称*:</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control m-workOrder-coordination-form-belongCp" readonly id="belongCp" >
                 </div>
             </div>
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">区域项目经理:</label>
+                <label class="col-sm-2 control-label">国家/地区*</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control m-workOrder-coordination-form-propertyAreaManagerName" readonly id="propertyAreaManagerName" >
                 </div>
-                <label class="col-sm-2 control-label">区域中心:</label>
+                <label class="col-sm-2 control-label">地址*</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control m-workOrder-coordination-form-admAreaName" readonly id="admAreaName" >
                 </div>
             </div>
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">父问题分类:</label>
+                <label class="col-sm-2 control-label">邮编*</label>
                 <div class="col-sm-4">
-                    <select class="form-control" id="questionCategoryParent" >
-                        <option value=""  selected>请选择</option>
-                        <option value="1">支付类</option>
-                        <option value="2">建设类</option>
-                        <option value="3">维护类</option>
-                    </select>
+                    <input type="text" class="form-control m-workOrder-coordination-form-propertyAreaManagerName" readonly id="propertyAreaManagerName" >
+                </div>
+                <label class="col-sm-2 control-label">城市*</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control m-workOrder-coordination-form-admAreaName" readonly id="admAreaName" >
                 </div>
             </div>
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">断站实际发生时间:</label>
+                <label class="col-sm-2 control-label">电话号码*</label>
                 <div class="col-sm-4">
-                    <div class="input-group">
-                        <input type="text" class="form-control m-workOrder-coordination-form-offTime" id="actualStationDate" ref="actualStationDate" >
-                        <div class="input-group-addon">
-                            <span class="glyphicon glyphicon-calendar"></span>
-                        </div>
-                    </div>
-                </div>
-                <label class="col-sm-2 control-label">外电单位:</label>
-                <div class="col-sm-4">
-                    <select class="form-control" id="names">
-                        <option value=""  selected>请选择</option>
-                        <option v-for="item in nameData" :value="item.name">{{ item.name}}</option>
-                    </select>
+                    <input type="text" class="form-control m-workOrder-coordination-form-propertyAreaManagerName" readonly id="propertyAreaManagerName" >
                 </div>
             </div>
-            <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">问题原因:</label>
-                <div class="col-sm-10">
-                    <textarea class="form-control" id="memo" ></textarea>
-                </div>
-            </div>
-            <div class="form-group form-group-required resultTxt" style="display:none;" >
-                <label class="col-sm-2 control-label">处理结果:</label>
-                <div class="col-sm-10">
-                    <textarea class="form-control" id="result" ></textarea>
-                </div>
-            </div>
-        </form>
-        <form class="form-horizontal ">
-            <div class="form-group">
-                <label class="col-sm-2 control-label">附件列表:</label>
-                <!-- <div class="m-workOrder-refund-uploadFileList"></div> -->
-                <div class="c-detail-table col-sm-10">
-                    <section class="c-table c-table-full" id="stationInfo">
-                        <table class="c-table-table">
-                            <thead>
-                            <tr>
-                                <!-- <th>站点编码</th>
-                                <th>合同编码</th> -->
-                                <th style="max-width:400px;">文件名</th>
-                                <th>文件类型</th>
-                                <th>备注</th>
-                                <th>关联对象</th>
-                                <th>操作人</th>
-                                <th>操作时间</th>
-                                <th>操作</th>
-                            </tr>
-                            </thead>
-                            <tbody id="appFileWrapper">
-                            <tr v-for="appFile in appFileList" v-if="appFileList.length>0">
-                                <td class="hide fileIdDown" v-text="appFile.fileId"></td>
-                                <!-- <td>
-                                    <em v-if="appFile.stationCode" v-text="appFile.stationCode"></em>
-                                </td>
-                                <td>
-                                    <em v-if="appFile.contractCode" v-text="appFile.contractCode"></em>
-                                </td> -->
-                                <td v-text="appFile.singleName"></td>
-                                <td v-text="appFile.fileType"></td>
-                                <td v-text="appFile.memo"></td>
-                                <td v-text="appFile.relaObjId"></td>
-                                <td v-text="appFile.operManId"></td>
-                                <td v-text="appFile.operDate"></td>
-                                <td>
-                                    <button class="btn btn-default" :disabled="appFileState" @click="downloadFile(appFile)" :data-id="appFile.fileId" type="button">下载</button>
-                                    <button class="btn btn-default" type="button" :disabled="appFileState" @click="deleteFile(appFile)" >删除</button>
-                                </td>
-                            </tr>
-                            <tr class="urlState">
-                                <td colspan="9" style="text-align: left" class="file">
-                                    <button class="btn btn-primary unloadFile" :disabled="appFileState" type="button">上传附件</button>
-                                    <!-- <a >电费台账</a>
-                                    <a >租金台账</a>     -->
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </section>
-                </div>
-            </div>
-            <div class="col-sm-offset-5">
-                <button type="button" class="btn btn-primary m-workOrder-coordination-form-commitBtn">提交</button>
-                <button type="button" class="btn btn-default m-workOrder-coordination-form-goBackBtn">返回</button>
-            </div>
-        </form>
 
+            <!-- 收件人信息 -->
+            <div class="form-group form-group-required">
+                <label class="col-sm-2 control-label">收件人信息</label>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-2 control-label">公司名称*</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control m-workOrder-coordination-form-stationName" readonly id="stationName" >
+                </div>
+                <label class="col-sm-2 control-label">国家/地区*</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control m-workOrder-coordination-form-stationStatus" readonly id="stationStat" >
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-2 control-label">地址*</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control m-workOrder-coordination-form-chgSignFlag" readonly id="chgSignFlag" >
+                </div>
+                <label class="col-sm-2 control-label">邮编</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control m-workOrder-coordination-form-belongCp" readonly id="belongCp" >
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-2 control-label">联系人*</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control m-workOrder-coordination-form-propertyAreaManagerName" readonly id="propertyAreaManagerName" >
+                </div>
+                <label class="col-sm-2 control-label">城市*</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control m-workOrder-coordination-form-admAreaName" readonly id="admAreaName" >
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-2 control-label">电话号码*</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control m-workOrder-coordination-form-propertyAreaManagerName" readonly id="propertyAreaManagerName" >
+                </div>
+            </div>
+                <button type="button" class="btn btn-primary m-workOrder-coordination-form-commitBtn">提交运单</button>
+        </form>
     </div>
 </div>
 </body>

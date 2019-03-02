@@ -12,7 +12,6 @@ import java.util.Date;
 public class DHLHelper {
 
     public  static String getDhlDateTime(){
-
         String localTime = LocalDateTime.now().toString();
         StringBuffer sb = new StringBuffer();
         String finalDate = sb.append(localTime).append("+08:00").toString();

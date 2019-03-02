@@ -51,7 +51,7 @@ public class RequestController {
 
         HttpEntity responsetEntity = httpResponse.getEntity();
         InputStream inputStream = responsetEntity.getContent();
-        OutputStream outputStream = new FileOutputStream("C:\\Users\\arfa\\resqonse.xml");
+        OutputStream outputStream = new FileOutputStream("/Users/apple/Documents/resqonse.xml");
         StringBuilder reponseXml = new StringBuilder();
         byte[] b = new byte[2048];
         int length = 0;

@@ -135,7 +135,7 @@ public class RequestServiceImpl implements RequestService {
 
 
 
-        XMLWriter xmlWriter = new XMLWriter(new FileOutputStream("C:\\Users\\arfa\\text.xml"));
+        XMLWriter xmlWriter = new XMLWriter(new FileOutputStream("/Users/apple/Documents/request.xml"));
         xmlWriter.setEscapeText(false);
         xmlWriter.write(document);
 
