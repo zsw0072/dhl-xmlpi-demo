@@ -9,99 +9,281 @@
 <div class="panel panel-default">
     <div class="panel-body">
         <form class="form-horizontal m-workOrder-coordination-form-form">
-
             <!-- 发件人信息 -->
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">发件人信息</label>
+                <label class="col-sm-1 control-label">发件人信息</label>
             </div>
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">发件人账号</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-stationName" readonly id="stationName" >
-                </div>
-                <label class="col-sm-2 control-label">联系人名称</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-stationStatus" readonly id="stationStat" >
-                </div>
-            </div>
-            <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">发件人参考信息</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-chgSignFlag" readonly id="chgSignFlag" >
-                </div>
-                <label class="col-sm-2 control-label">公司名称*:</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-belongCp" readonly id="belongCp" >
+                <label class="col-sm-1 control-label">付费至</label>
+                <div class="col-sm-3">
+                    <input type="radio" name="name" value="sender" checked>发件人
+                    <input type="radio" name="name" value="receiver" >收件人
+                    <input type="radio" name="name" value="3rd">第三方
                 </div>
             </div>
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">国家/地区*</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-propertyAreaManagerName" readonly id="propertyAreaManagerName" >
-                </div>
-                <label class="col-sm-2 control-label">地址*</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-admAreaName" readonly id="admAreaName" >
+                <label class="col-sm-1 control-label">付款人账号*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
                 </div>
             </div>
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">邮编*</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-propertyAreaManagerName" readonly id="propertyAreaManagerName" >
+                <label class="col-sm-1 control-label">发件人账号</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
                 </div>
-                <label class="col-sm-2 control-label">城市*</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-admAreaName" readonly id="admAreaName" >
+                <label class="col-sm-1 control-label">联系人名称</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
                 </div>
             </div>
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">电话号码*</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-propertyAreaManagerName" readonly id="propertyAreaManagerName" >
+                <label class="col-sm-1 control-label">发件人参考信息</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+                <label class="col-sm-1 control-label">公司名称*:</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">国家/地区*</label>
+                <div class="col-xs-2">
+                    <select class="form-control">
+                        <option>a</option>
+                        <option>b</option>
+                    </select>
+                </div>
+                <label class="col-sm-1 control-label">地址*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">邮编*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+                <label class="col-sm-1 control-label">城市*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">电话号码*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
                 </div>
             </div>
 
             <!-- 收件人信息 -->
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">收件人信息</label>
+                <label class="col-sm-1 control-label">收件人信息</label>
             </div>
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">公司名称*</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-stationName" readonly id="stationName" >
+                <label class="col-sm-1 control-label">公司名称*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
                 </div>
-                <label class="col-sm-2 control-label">国家/地区*</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-stationStatus" readonly id="stationStat" >
-                </div>
-            </div>
-            <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">地址*</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-chgSignFlag" readonly id="chgSignFlag" >
-                </div>
-                <label class="col-sm-2 control-label">邮编</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-belongCp" readonly id="belongCp" >
+                <label class="col-sm-1 control-label">国家/地区*</label>
+                <div class="col-xs-2">
+                    <select class="form-control">
+                        <option>a</option>
+                        <option>b</option>
+                    </select>
                 </div>
             </div>
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">联系人*</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-propertyAreaManagerName" readonly id="propertyAreaManagerName" >
+                <label class="col-sm-1 control-label">地址*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
                 </div>
-                <label class="col-sm-2 control-label">城市*</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-admAreaName" readonly id="admAreaName" >
+                <label class="col-sm-1 control-label">邮编</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
                 </div>
             </div>
             <div class="form-group form-group-required">
-                <label class="col-sm-2 control-label">电话号码*</label>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control m-workOrder-coordination-form-propertyAreaManagerName" readonly id="propertyAreaManagerName" >
+                <label class="col-sm-1 control-label">联系人*</label>
+                <div class="col-xs-2" class="form-control">
+                    <input type="text" class="form-control">
+                </div>
+                <label class="col-sm-1 control-label">城市*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
                 </div>
             </div>
-                <button type="button" class="btn btn-primary m-workOrder-coordination-form-commitBtn">提交运单</button>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">电话号码*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+
+            <!--产品及服务 -->
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">产品及服务</label>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">种类*</label>
+                <div class="col-xs-2">
+                    <select class="form-control">
+                        <option>包裹</option>
+                        <option>文件</option>
+                        <option>国内件</option>
+                    </select>
+                </div>
+                <label class="col-sm-1 control-label">产品</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+
+            <!--快件详细信息 -->
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">快件详细信息*</label>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">包装类型*</label>
+                <div class="col-xs-2">
+                    <select class="form-control">
+                        <option>花袋/信封</option>
+                        <option>DHL箱子</option>
+                        <option>您自己的包装</option>
+                    </select>
+                </div>
+                <label class="col-sm-1 control-label">件数*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">单件重量*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+
+            <!--交运物品详细说明 -->
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">交运物品详细说明</label>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">提供内容和数量*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+
+
+            <!--只针对包裹快件（海关要求） -->
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">只针对包裹快件（海关要求）</label>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">发件人增值税/商品服务税号</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+                <label class="col-sm-1 control-label">收件人增值税/商品服务税号</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">通关的申报价值(用于商业/形式发票)</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+                <label class="col-sm-1 control-label">协调商品代码(如果需要)</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">快件保险（建议您申报价值与保险价值保持一致）</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+                <label class="col-sm-1 control-label">目的地关税与税金</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">制作发票</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+                <label class="col-sm-1 control-label">日期</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">出口类型</label>
+                <div class="col-xs-2">
+                    <select class="form-control">
+                        <option>Permanent(永久)</option>
+                        <option>Temporary(临时)</option>
+                        <option>Repair/Return(返修货)</option>
+                    </select>
+                </div>
+                <label class="col-sm-1 control-label">贸易条款</label>
+                <div class="col-xs-2">
+                    <select class="form-control">
+                        <option>DAP-Delivered at Place</option>
+                        <option>EXW-Ex Works</option>
+                        <option>FCA-Free Carrier</option>
+                        <option>CPT-Carried Paid To</option>
+                        <option>CIP-Carriage and Insurance Paid</option>
+                        <option>DAT-Delivered at Terminal</option>
+                        <option>DDP-Delivered Duty Paid</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">发票号码</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+                <label class="col-sm-1 control-label">付款方式</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">注释</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+                <label class="col-sm-1 control-label">完整的物品描述 *</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">数量*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+                <label class="col-sm-1 control-label">单位*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">单价*</label>
+                <div class="col-xs-2">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group form-group-required">
+                <label class="col-sm-1 control-label">单价*</label>
+                <button type="button">提交运单</button>
+            </div>
+
         </form>
     </div>
 </div>
