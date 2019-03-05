@@ -31,6 +31,11 @@ public class RequestController {
 
     }
 
+    @RequestMapping("/html")
+    public String index(){
+        return "/index.html";
+    }
+
     private static void sendRequest() throws IOException{
         String testUrl = "https://xmlpitest-ea.dhl.com/XMLShippingServlet";
         String url = "https://xmlpi-ea.dhl.com/XMLShippingServlet";
@@ -54,4 +59,6 @@ public class RequestController {
         }
         System.out.println(reponseXml);
     }
+
+
 }
